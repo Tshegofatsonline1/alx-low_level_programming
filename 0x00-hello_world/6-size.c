@@ -4,16 +4,9 @@
  * main -entry point
  * Description: 'the program's description
  * Return: always 0 success
- */ 
-
+ */
 int main(void)
 {
-char a;
-int b;
-long int c;
-long long int d;
-float f;
-
 printf("Size of a char: %ld byte(s)\n", sizeof(char));
 printf("Size of an int: %ld byte(s)\n", sizeof(int));
 printf("Size of a long int: %ld byte(s)\n", sizeof(long int));
