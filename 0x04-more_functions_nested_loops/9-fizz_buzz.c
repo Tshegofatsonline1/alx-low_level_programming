@@ -2,7 +2,7 @@
 
 /**
  * main - program that prints the numbers from 1 to 100
- * but for multiples of three prints fizz
+ * but for multiples of three prints Fizz
  * and for the multiples of five prints Buzz
  * Return: 0
  */
@@ -15,7 +15,7 @@ for (num = 1; num  <= 100; num++)
 {
 if (num % 3 == 0 && num % 5 == 0)
 {
-printf("fizzBuzz");
+printf("FizzBuzz");
 }
 else if (num % 3 == 0 && num % 5 != 0)
 {
