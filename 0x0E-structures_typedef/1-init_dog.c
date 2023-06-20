@@ -5,7 +5,7 @@
  * @name: name of the dog
  * @owner: owner of the dog
  * @age: age of the dog
- *
+ * Description: initializes a variable type for struct dog
  * return:0(always)
  */
 
