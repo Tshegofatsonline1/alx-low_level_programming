@@ -5,14 +5,14 @@
 /**
  * print_numbers- function that print numbers followed by a newline
  * @n: number of integers passed to the function
- * separator: string to be printed inbetween numbers
+ * @separator: string to be printed inbetween numbers
  * if the separator is NULL don't print it
  *
  * return:0
  *
  */
 
-void print_numbers(const char *separator, const unsigned int n,...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list nums;
 unsigned int index;
