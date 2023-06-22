@@ -48,8 +48,6 @@ sep = ", ";
 k++;
 }
 }
-
-
 printf("\n");
 va_end(list);
 }
