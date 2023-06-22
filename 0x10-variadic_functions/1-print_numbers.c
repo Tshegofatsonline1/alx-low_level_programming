@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
-
+#include <stdio.h>
+#include <stddef.h>
 /**
  * print_numbers- function that print numbers followed by a newline
  * @n: number of integers passed to the function
@@ -11,15 +12,27 @@
  *
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n,...)
 {
-va_list ap;
-const unsigned int k;
-va_start(ap, n);
+va_list nums;
+unsigned int index;
 
-for (k = 0; k < n; k++)
-printf(", 4, 0, 98, -1024, 402 %i\n");
 
-va_end(ap);
-return(numbers);
+va_start(nums, n);
+
+
+for (index = 0; index < n; index++)
+{
+printf("%d", va_arg(nums, int));
+
+
+if (index != (n - 1) && separator != NULL)
+printf("%s", separator);
+}
+
+
+printf("\n");
+
+
+va_end(nums);
 }
