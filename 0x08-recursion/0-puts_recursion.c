@@ -2,12 +2,19 @@
 
 /**
  * puts_recursion - function that prints a string, followed by a new line.
- * 
+ *@s:string to print
  * return: (0);
  */
 
-void _puts_recursion(char *s);
+void _puts_recursion(char *s)
+
 {
-_puts_recursion("Puts with recursion")
-return (0);
+if (*s)
+{
+_putchar(*s);
+_puts_recursion(s + 1);
+}
+
+else
+_putchar('\n');
 }
